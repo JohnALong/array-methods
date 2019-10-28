@@ -173,7 +173,7 @@ outEl.innerHTML += "<h1>Purchasing Agents</h1>";
 */
 const agents = businesses.map(business => {
     return {
-        agent: business.purchasingAgent,
+        fullName: `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`,
         phone: business.phoneWork,
         coName: business.companyName
     }
@@ -181,10 +181,11 @@ const agents = businesses.map(business => {
 console.log("agent object", agents)
 
 agents.forEach(agent => {
-    outEl.innerHTML += `<h2>${agent.agent.nameFirst} ${agent.agent.nameLast}</h2>
-  <h4>${agent.coName}</h4>
-  <h4>${agent.phone}</h4>
-  `;
+    outEl.innerHTML += 
+        `<h2>${agent.fullName}</h2>
+         <p>${agent.coName}</p>
+         <p>${agent.phone}</p>
+        `;
     outEl.innerHTML += "<hr/>";
 });
 
