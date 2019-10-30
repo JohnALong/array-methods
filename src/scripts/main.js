@@ -1,58 +1,61 @@
-console.log("help"); const businesses = [
+
+
+
+const businesses = [
     {
-        purchasingAgent: { nameLast: "Kirlin", nameFirst: "Kristy" },
-        phoneWork: "089.129.2290 x9400",
-        orders: [7826.96, 8323.11, 5756.28, 6308.42, 5622.28],
-        companyName: "Care-media",
-        companyIndustry: "Education",
-        addressZipCode: "56839",
-        addressStateCode: "WI",
-        addressFullStreet: "8417 Franklin Court Tunnel",
-        addressCity: "Mouthcard"
+      purchasingAgent: { nameLast: "Kirlin", nameFirst: "Kristy" },
+      phoneWork: "089.129.2290 x9400",
+      orders: [7826.96, 8323.11, 5756.28, 6308.42, 5622.28],
+      companyName: "Care-media",
+      companyIndustry: "Education",
+      addressZipCode: "56839",
+      addressStateCode: "WI",
+      addressFullStreet: "8417 Franklin Court Tunnel",
+      addressCity: "Mouthcard"
     },
     {
-        purchasingAgent: { nameLast: "Steuber", nameFirst: "Kamron" },
-        phoneWork: "(833) 222-7579 x5874",
-        orders: [6252.5, 9769.02, 9521.17, 7994.05, 7945.93],
-        companyName: "Stanholding",
-        companyIndustry: "Hospitality",
-        addressZipCode: "09705",
-        addressStateCode: "NY",
-        addressFullStreet: "2889 Fawn Court Garden",
-        addressCity: "Fellsmere"
+      purchasingAgent: { nameLast: "Steuber", nameFirst: "Kamron" },
+      phoneWork: "(833) 222-7579 x5874",
+      orders: [6252.5, 9769.02, 9521.17, 7994.05, 7945.93],
+      companyName: "Stanholding",
+      companyIndustry: "Hospitality",
+      addressZipCode: "09705",
+      addressStateCode: "NY",
+      addressFullStreet: "2889 Fawn Court Garden",
+      addressCity: "Fellsmere"
     },
     {
-        purchasingAgent: { nameLast: "Gutkowski", nameFirst: "Kaylee" },
-        phoneWork: "235.266.6278",
-        orders: [7634.43, 9766.72, 9953.45, 6559.8, 5054.9],
-        companyName: "Highnix",
-        companyIndustry: "Agriculture",
-        addressZipCode: "49376",
-        addressStateCode: "ME",
-        addressFullStreet: "5734 Maple Avenue Throughway",
-        addressCity: "Little Genesee"
+      purchasingAgent: { nameLast: "Gutkowski", nameFirst: "Kaylee" },
+      phoneWork: "235.266.6278",
+      orders: [7634.43, 9766.72, 9953.45, 6559.8, 5054.9],
+      companyName: "Highnix",
+      companyIndustry: "Agriculture",
+      addressZipCode: "49376",
+      addressStateCode: "ME",
+      addressFullStreet: "5734 Maple Avenue Throughway",
+      addressCity: "Little Genesee"
     },
     {
-        purchasingAgent: { nameLast: "Crona", nameFirst: "Lauren" },
-        phoneWork: "1-449-987-3083 x23263",
-        orders: [7384.52, 9252.72, 7272.65, 5251.84, 9680.08],
-        companyName: "Conit",
-        companyIndustry: "Defense",
-        addressZipCode: "53326",
-        addressStateCode: "IL",
-        addressFullStreet: "5755 Hillside Drive Crossroad",
-        addressCity: "Norval"
+      purchasingAgent: { nameLast: "Crona", nameFirst: "Lauren" },
+      phoneWork: "1-449-987-3083 x23263",
+      orders: [7384.52, 9252.72, 7272.65, 5251.84, 9680.08],
+      companyName: "Conit",
+      companyIndustry: "Defense",
+      addressZipCode: "53326",
+      addressStateCode: "IL",
+      addressFullStreet: "5755 Hillside Drive Crossroad",
+      addressCity: "Norval"
     },
     {
-        purchasingAgent: { nameLast: "Krajcik", nameFirst: "Elvera" },
-        phoneWork: "1-730-411-8580",
-        orders: [6069.05, 8535.38, 5782.7, 7838.91, 7578.36],
-        companyName: "Dong-tom",
-        companyIndustry: "Energy",
-        addressZipCode: "67071",
-        addressStateCode: "KS",
-        addressFullStreet: "4826 Arch Street Lights",
-        addressCity: "Newburyport"
+      purchasingAgent: { nameLast: "Krajcik", nameFirst: "Elvera" },
+      phoneWork: "1-730-411-8580",
+      orders: [6069.05, 8535.38, 5782.7, 7838.91, 7578.36],
+      companyName: "Dong-tom",
+      companyIndustry: "Energy",
+      addressZipCode: "67071",
+      addressStateCode: "KS",
+      addressFullStreet: "4826 Arch Street Lights",
+      addressCity: "Newburyport"
     },
     {
         purchasingAgent: { nameLast: "Kling", nameFirst: "Ellie" },
@@ -110,81 +113,192 @@ console.log("help"); const businesses = [
         addressCity: "Watrous"
     }
 ];
-const outEl = document.querySelector("#container")
-//   outEl.innerHTML = "<h1>Acitve Businesses</h1>"
-// listing of each business & address
-//   businesses.forEach(business => {
-//       const zipCodeKey = "addressZipCode";
-//       outEl.innerHTML += `
-//       <h2>${business.companyName}</h2>
-//       <section>
-//       ${business.addressFullStreet}
-//       </section>
-//       <section>${business.addressCity}, ${business["addressStateCode"]} ${business[zipCodeKey]}</section>
-//       `
-//   })
-// arrary to contain all businesses in NY
-//   const newYorkBusinesses = businesses.filter(business => {
-//       let inNewYork = false;
-//       if (business.addressStateCode === "NY") {
-//           inNewYork = true;
-//       } 
-//       return inNewYork
-//   })
-// console.log("test", newYorkBusinesses)
-// // only New York businesses to the dom
-//   newYorkBusinesses.forEach(business => {
-//       const zipCodeKey = "addressZipCode";
-//       outEl.innerHTML += `
-//       <h2>${business.companyName}</h2>
-//       <section>
-//       ${business.addressFullStreet}
-//       </section>
-//       <section>${business.addressCity}, ${business["addressStateCode"]} ${business[zipCodeKey]}</section>
-//       `
-//   })
 
-// const manufacturingBusinesses = businesses.filter(business => {
-//     if (business.companyIndustry === "Manufacturing") {
-//         manufacturing = true;
-//     } else {
-//         return false;
-//     }
-//     return manufacturing
-// })
-// console.log("manufacturing test", manufacturingBusinesses);
-//   manufacturingBusinesses.forEach(business => {
-//       const zipCodeKey = "addressZipCode";
-//       outEl.innerHTML += `
-//       <h2>${business.companyName}</h2>
-//       <section>
-//       ${business.addressFullStreet}
-//       </section>
-//       <section>${business.addressCity}, ${business["addressStateCode"]} ${business[zipCodeKey]}</section>
-//       `
-//   })
+const outEl = document.querySelector("#output")
+outEl.innerHTML = "<h1>Active Businesses</h1>"
+outEl.innerHTML += "<h1>Search Results</h1>";
 
+// Array to contain all the New York businesses
+const newYorkBusinesses = businesses.filter(business => {
+    let inNewYork = false
+    
+    if (business.addressStateCode === "NY") {
+        inNewYork = true
+    }
+    // console.log(business.companyName, inNewYork)
+  
+    return inNewYork
+  })
+  
+  // console.log(newYorkBusinesses)
+  
+  // Lightning Exercise: Use filter() to create another array named manufacturingBusinesses that will contain all businesses in the manufacturing industry. Display those to the DOM.
+  
+  const manufacturingBusinesses = businesses.filter(business => {
+    // console.log(indexPosition)
+    if (business.companyIndustry === "Manufacturing") {
+      return true
+    } else {
+      return false
+    }
+  })
+  
+  manufacturingBusinesses.forEach(business => {
+    const zipcodeKey = "addressZipCode"
+    outEl.innerHTML += `
+      <h2>${business.companyName}</h2>
+      <section>
+        ${business.addressFullStreet}
+      </section>
+      <section>
+      ${business.addressCity}, ${business["addressStateCode"]} ${business[zipcodeKey]}
+      </section>
+    `
+    outEl.innerHTML += "<hr/>"
+  });
 
-outEl.innerHTML += "<h1>Purchasing Agents</h1>";
-
-/*
+  /*
     Using map(), you extract the purchasing agent object
     from each business and store it in a new array
 */
 const agents = businesses.map(business => {
-    return {
-        agent: business.purchasingAgent,
-        phone: business.phoneWork,
-        coName: business.companyName
-    }
-})
-console.log("agent object", agents)
-
-agents.forEach(agent => {
-    outEl.innerHTML += `<h2>${agent.agent.nameFirst} ${agent.agent.nameLast}</h2>
-  <h4>${agent.coName}</h4>
-  <h4>${agent.phone}</h4>
-  `;
+    console.log(business.purchasingAgent)
+    return business.purchasingAgent
+  })
+  
+  agents.forEach(agent => {
+    outEl.innerHTML += `<h2>${agent.nameFirst} ${agent.nameLast}</h2>`;
     outEl.innerHTML += "<hr/>";
+  });
+  
+  // Lightning Exercise: Instead of just returning the purchasing agent object, return a new object that has the full name of the purchasing agent, the company name, and the phone number. The data structure is shown below. Use that new data structure to display the agent with their company and phone number
+  
+  const agentsWithCompanyAndPhone = businesses.map(business => {
+    return {
+      "fullName": `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`,
+      "company": business.companyName,
+      "phoneNumber": business.phoneWork
+    }
+  
+  })
+  
+  console.table(agentsWithCompanyAndPhone)
+  
+  agentsWithCompanyAndPhone.forEach(agent => {
+    outEl.innerHTML += `<h2>${agent.fullName}</h2>`;
+    outEl.innerHTML += `<p>${agent.company}</p>`
+    outEl.innerHTML += `<p>Phone: ${agent.phoneNumber}</p>`
+    outEl.innerHTML += "<hr/>";
+  });
+
+
+// document.querySelector("#companySearch")
+//   .addEventListener("keypress", keyPressEvent => {
+//     // console.log("Keycode of whatever was presssed", keyPressEvent.charCode)
+//     if (keyPressEvent.charCode === 13) {
+//       /* WHEN  USER PRESSES ENTER, FIND MATCHING BUSINESS */
+//       // console.log("Enter key was pressed")
+
+//       const foundBusiness = businesses.find(
+//         business => {
+//           // console.log(business.companyName)
+//           return business.companyName.toLowerCase().includes(keyPressEvent.target.value.toLowerCase())
+//         });
+
+//       console.log("found business", foundBusiness)
+
+//       outEl.innerHTML = `
+//                 <h2>
+//                 ${foundBusiness.companyName}
+//                 </h2>
+//                 <section>
+//                 ${foundBusiness.addressFullStreet}
+
+//                 </section>
+//                 <section>
+//                 ${foundBusiness.addressCity},
+//                 ${foundBusiness.addressStateCode}
+//                 ${foundBusiness.addressZipCode}
+//                 </section>
+//             `;
+//     }
+//   });
+
+// Lightning Exercise 1: Refactor your code to search for purchasing agents instead. If the search text is found in the first name of any purchasing agent, show that agent.
+
+// Lightning Exercise 2: Refactor your code so that if the search text is found in the first name, or last name, of any purchasing agent, show that agent.
+
+document.querySelector("#companySearch").addEventListener("keypress", keyPressEvent => {
+    if (keyPressEvent.charCode === 13) {
+      /* WHEN  USER PRESSES ENTER, FIND MATCHING BUSINESS */
+
+      const foundBusiness = businesses.find(
+        business => {
+          const agentFirst = business.purchasingAgent.nameFirst
+          const agentLast = business.purchasingAgent.nameLast
+          const input = keyPressEvent.target.value
+          return agentFirst.includes(input) || agentLast.includes(input)
+        });
+
+      outEl.innerHTML = `
+                <h2>
+                ${foundBusiness.purchasingAgent.nameFirst} ${foundBusiness.purchasingAgent.nameLast}
+                </h2>
+                <section>
+                ${foundBusiness.companyName}
+                </section>
+            `;
+    }
+  });
+
+  outEl.innerHTML += "<h1>Businesses</h1>";
+
+businesses.forEach(business => {
+  /* CALCULATE ORDER SUMMARY */
+  // let totalOrders = 0
+  // business.orders.forEach(order => totalOrders += order)
+
+  /* CALCULATE ORDER SUMMARY */
+  let totalOrders = business.orders.reduce(
+    (currentTotal, nextValue) => currentTotal += nextValue,
+    0
+  )
+
+
+
+  outEl.innerHTML += `
+      <h2>
+          ${business.companyName}
+          ($${totalOrders.toFixed(2)})
+      </h2>
+      <section>
+          ${business.addressFullStreet}
+      </section>
+      <section>
+          ${business.addressCity},
+          ${business.addressStateCode}
+          ${business.addressZipCode}
+      </section>
+  `;
+  outEl.innerHTML += "<hr/>";
 });
 
+
+// Lightning Exercise 1: Use the reduce method on the following array to determine how much total rain fell last month.
+
+const monthlyRainfall = [23, 13, 27, 20, 20, 31, 33, 26, 19, 12, 14, 12, 10]
+
+const totalRainfall = monthlyRainfall.reduce((total, currentValue) => {
+  console.log(total, currentValue)
+  return total += currentValue
+}, 1000)
+
+console.log(totalRainfall)
+
+// Lightning Exercise 2: Use the reduce method on the following array to build a sentence.
+
+const words = ["The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog"]
+
+const TheSentence = words.reduce((sentence, currentWord) => sentence += ` ${currentWord}`)
+
+console.log(`${TheSentence}.`)
