@@ -240,8 +240,10 @@ let customers = [
         }
     }
 ];
-console.log("customers", customers.contacts)
-customers.forEach(function(element) {
-console.log("customers looped", customers.location)
+// exercise completed!
+console.log("customers", customers)
+customers.forEach(contacts => {
+  console.log("in for each", contacts.contacts.email)
+  const emailAddress = Object.values(contacts.contacts.email)
+  console.log("see if it works", emailAddress)
 })
-
